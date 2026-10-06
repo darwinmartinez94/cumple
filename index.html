@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Los 2 Añitos de Rosita Fresita!</title>
+    <title>¡Los 2 Añitos de Sharlotte - Rosita Fresita!</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8D%93%3C/text%3E%3C/svg%3E">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -81,15 +82,11 @@
         .pulse-glow {
             animation: pulseGlow 2.5s infinite;
         }
-
-        .strawberry-bg {
-            background: linear-gradient(135deg, #ff4d6d 0%, #ff758f 100%);
-        }
     </style>
 </head>
-<body class="text-slate-700 font-sans antialiased min-h-screen flex flex-col justify-between">
+<body class="text-slate-700 font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Decorative floating strawberries / bubbles header -->
+    <!-- Decorative floating elements -->
     <div class="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0 opacity-40">
         <div class="absolute top-10 left-10 text-4xl animate-float" style="animation-delay: 0s;">🍓</div>
         <div class="absolute top-20 right-16 text-3xl animate-float" style="animation-delay: 1s;">🌸</div>
@@ -98,24 +95,25 @@
     </div>
 
     <!-- Main Wrapper -->
-    <main class="relative z-10 container mx-auto px-4 py-8 max-w-3xl flex-grow flex flex-col items-center justify-center">
+    <main class="relative z-10 container mx-auto px-4 pt-8 pb-1 max-w-3xl flex-grow flex flex-col items-center justify-center">
 
         <!-- Header Card / Hero -->
-        <div class="glass-card rounded-3xl p-6 sm:p-10 w-full text-center relative overflow-hidden mb-6 transform transition-all duration-500 hover:shadow-2xl">
+        <div class="glass-card rounded-3xl p-6 pt-16 sm:p-10 w-full text-center relative overflow-hidden mb-2 sm:mb-6">
             <!-- Ribbon Top -->
-            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 bg-strawberry-500 text-white px-8 py-1.5 rounded-b-2xl font-montserrat font-bold text-xs sm:text-sm tracking-wider uppercase shadow-md">
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-max max-w-[90%] text-center bg-strawberry-500 text-white px-4 sm:px-8 py-1.5 rounded-b-2xl font-montserrat font-bold text-xs sm:text-sm tracking-wider uppercase shadow-md">
                 ¡Estás cordialmente invitado!
             </div>
 
             <!-- Age Badge -->
-            <div class="mt-4 inline-flex items-center justify-center bg-strawberry-100 text-strawberry-700 px-4 py-1 rounded-full font-bold text-sm mb-3 border border-strawberry-300">
-                <i class="fa-solid fa-cake-candles mr-2 text-strawberry-500"></i> ¡Cumplo 2 Añitos!
+            <div class="inline-flex items-center justify-center bg-strawberry-100 text-strawberry-700 px-4 py-1 rounded-full font-bold text-sm mb-3 border border-strawberry-300">
+                <i class="fa-solid fa-cake-candles mr-2 text-strawberry-500"></i> Sharlotte ¡Cumple 2 Añitos!
             </div>
 
             <!-- Main Title -->
             <h1 class="font-display text-4xl sm:text-6xl text-strawberry-600 drop-shadow-sm mb-2">
                 Rosita Fresita
             </h1>
+            <img src="https://i.pinimg.com/originals/a0/aa/67/a0aa674ee3f0e6a70e0e2b60b383d5f7.png" alt="Rosita Fresita" class="w-20 h-20 mx-auto my-3 rounded-full border-4 border-strawberry-300 object-cover shadow-md" width="80" height="80">
             <p class="font-montserrat text-slate-600 text-sm sm:text-base font-semibold tracking-wide uppercase mb-6">
                 Una tarde mágica llena de dulzura y diversión
             </p>
@@ -126,7 +124,7 @@
                 <h2 id="guestNameDisplay" class="font-display text-2xl sm:text-3xl text-strawberry-700">Gaby Alvarez y Familia</h2>
             </div>
 
-            <!-- Tender Quote & Rule Card (Inspired by user image) -->
+            <!-- Tender Quote & Rule Card -->
             <div class="bg-white/80 border border-pink-200 rounded-2xl p-5 sm:p-6 shadow-md relative my-6 text-center">
                 <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-amber-400 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md text-lg">
                     ⏰
@@ -193,7 +191,7 @@
             <div class="mb-8 rounded-2xl overflow-hidden border-2 border-strawberry-300 shadow-md">
                 <div class="bg-strawberry-600 text-white py-2 px-4 text-xs font-montserrat font-bold flex items-center justify-between">
                     <span><i class="fa-solid fa-map-location-dot mr-2"></i> Ubicación exacta: Parque Aurora</span>
-                    <a href="https://maps.app.goo.gl/ParqueAurora" target="_blank" class="underline hover:text-strawberry-100 text-[11px]">Abrir en Google Maps</a>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=14.294332858849886%2C-87.40398354482683" target="_blank" rel="noopener noreferrer" class="underline hover:text-strawberry-100 text-[11px]">Abrir en Google Maps</a>
                 </div>
                 <div class="w-full h-64 sm:h-72">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1801.7897590821044!2d-87.40498320707485!3d14.28524768637411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6f786b8daa7c27%3A0x45948958cec787aa!2sParque%20Aurora!5e1!3m2!1ses-419!2shn!4v1790814174240!5m2!1ses-419!2shn" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -207,18 +205,22 @@
                     <i class="fa-solid fa-calendar-plus text-lg"></i>
                     <span>Agregar al Calendario</span>
                 </button>
+                <p id="calendarNotice" role="status" aria-live="polite" class="hidden rounded-xl border border-strawberry-200 bg-white px-4 py-3 text-left text-xs sm:text-sm text-slate-700">
+                    <span class="font-bold text-strawberry-700">¡Listo! Se descargó tu invitación.</span>
+                    <span class="block mt-1">Abre el archivo <strong>cumpleanos-sharlotte.ics</strong> desde tus descargas y elige tu app de calendario para guardar el evento.</span>
+                </p>
 
                 <!-- RSVP Section -->
-                <div class="bg-strawberry-50/80 rounded-2xl p-5 border border-strawberry-200">
+                <div class="bg-strawberry-50/80 rounded-2xl p-4 sm:p-5 border border-strawberry-200">
                     <h4 class="font-montserrat font-bold text-strawberry-700 text-base mb-2">¿Nos acompañas en este día especial?</h4>
                     <p class="text-slate-600 text-xs sm:text-sm mb-4">Por favor confirma tu asistencia haciendo clic en uno de los siguientes botones:</p>
-                    
+
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <button onclick="sendRSVP('Sí asistiré 🎉')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-md transition-all flex items-center justify-center space-x-2 text-sm sm:text-base pulse-glow">
+                        <button onclick="sendRSVP('Sí asistiré 🎉')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 sm:px-6 rounded-xl shadow-md transition-all flex items-center justify-center space-x-2 text-sm sm:text-base pulse-glow">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                             <span>Sí asistiré</span>
                         </button>
-                        <button onclick="sendRSVP('No puedo asistir 😢')" class="bg-slate-500 hover:bg-slate-600 text-white font-bold py-3.5 px-6 rounded-xl shadow-md transition-all flex items-center justify-center space-x-2 text-sm sm:text-base">
+                        <button onclick="sendRSVP('No puedo asistir 😢')" class="bg-slate-500 hover:bg-slate-600 text-white font-bold py-3.5 px-4 sm:px-6 rounded-xl shadow-md transition-all flex items-center justify-center space-x-2 text-sm sm:text-base">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                             <span>No puedo</span>
                         </button>
@@ -231,25 +233,19 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center py-6 text-xs text-slate-500 font-medium">
-        <p>Diseñado con mucho ❤️ para el cumpleaños de Rosita Fresita</p>
+    <footer class="relative z-10 text-center pt-2 pb-4 text-xs text-slate-500 font-medium">
+        <p>Diseñado con mucho ❤️ para el cumpleaños de Sharlotte</p>
     </footer>
 
     <!-- JavaScript Logic -->
     <script>
-        // Get guest name from URL parameter ?invitado=Nombre or default to "Gaby Alvarez y Familia"
+        // Obtener invitado de la URL o mostrar el de prueba por defecto
         const urlParams = new URLSearchParams(window.location.search);
-        let guestName = urlParams.get('invitado');
-        if (!guestName) {
-            guestName = "Gaby Alvarez y Familia";
-        } else {
-            // Decode potential URI encoding
-            guestName = decodeURIComponent(guestName);
-        }
+        let guestName = urlParams.get('invitado') || "Gaby Alvarez y Familia";
         document.getElementById('guestNameDisplay').textContent = guestName;
 
-        // Countdown Timer Logic to November 29, 2026 14:00:00
-        const eventDate = new Date("November 29, 2026 14:00:00").getTime();
+        // Fecha del evento con zona horaria segura para dispositivos móviles
+        const eventDate = new Date("2026-11-29T14:00:00-06:00").getTime();
 
         const timerInterval = setInterval(function() {
             const now = new Date().getTime();
@@ -257,10 +253,11 @@
 
             if (distance < 0) {
                 clearInterval(timerInterval);
-                document.getElementById("countdown").innerHTML = "<div class='col-span-4 bg-strawberry-600 text-white py-3 rounded-xl font-bold'>¡El Gran Día Ha Llegado! 🎉</div>";
+                document.getElementById("countdown").innerHTML = "<div class='col-span-4 bg-strawberry-600 text-white py-3 rounded-xl font-bold text-center'>¡El Gran Día Ha Llegado! 🎉</div>";
                 return;
             }
 
+            // Operadores matemáticos para calcular días, horas, minutos y segundos
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -272,27 +269,44 @@
             document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
         }, 1000);
 
-        // WhatsApp RSVP Function
+        // Funcion RSVP de WhatsApp 
         function sendRSVP(responseStatus) {
-            // Replace with the host's WhatsApp phone number in international format (e.g., 50499999999)
-            const phoneNumber = "50400000000"; 
-            const message = `Hola! Soy *${guestName}*. He recibido la invitación para los 2 añitos de Rosita Fresita y mi respuesta es: *${responseStatus}*. ¡Nos vemos! 🍓`;
+            const phoneNumber = "50496396306"; 
+            const message = `Hola! Soy *${guestName}*. He recibido la invitación y mi respuesta es: *${responseStatus}*. ¡Nos vemos! 🍓`;
             const encodedMessage = encodeURIComponent(message);
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
             window.open(whatsappURL, '_blank');
         }
 
-        // Add to Calendar Function (Google Calendar Link & .ics generator)
+        // Función Calendario (.ics)
         function addToCalendar() {
-            const title = encodeURIComponent("Cumpleaños 2 Añitos - Rosita Fresita 🍓");
-            const details = encodeURIComponent("¡Llegar tarde está prohibido... divertirse es obligatorio! Te esperamos en Parque Aurora.");
-            const location = encodeURIComponent("Parque Aurora");
-            const startTime = "20261129T140000";
-            const endTime = "20261129T180000"; // Assuming 4 hours duration
-
-            const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startTime}/${endTime}&details=${details}&location=${location}`;
+            const event = [
+                "BEGIN:VCALENDAR",
+                "VERSION:2.0",
+                "PRODID:-//Invitacion Rosita Fresita//ES",
+                "CALSCALE:GREGORIAN",
+                "BEGIN:VEVENT",
+                "UID:rosita-fresita-20261129@cumpleapp",
+                `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "")}`,
+                "DTSTART:20261129T200000Z",
+                "DTEND:20261130T000000Z",
+                "SUMMARY:Cumpleaños 2 Añitos - Sharlotte",
+                "DESCRIPTION: Te esperamos en Parque Aurora.",
+                "LOCATION:Parque Aurora",
+                "END:VEVENT",
+                "END:VCALENDAR"
+            ].join("\r\n");
             
-            window.open(googleCalendarUrl, '_blank');
+            const calendarFile = new Blob([event], { type: "text/calendar;charset=utf-8" });
+            const downloadLink = document.createElement("a");
+            downloadLink.href = URL.createObjectURL(calendarFile);
+            downloadLink.download = "cumpleanos-sharlotte.ics";
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            downloadLink.remove();
+            
+            document.getElementById("calendarNotice").classList.remove("hidden");
+            setTimeout(() => URL.revokeObjectURL(downloadLink.href), 1000);
         }
     </script>
 </body>
