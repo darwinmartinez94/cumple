@@ -242,6 +242,14 @@
         // Obtener invitado de la URL o mostrar el de prueba por defecto
         const urlParams = new URLSearchParams(window.location.search);
         let guestName = urlParams.get('invitado') || "Gaby Alvarez y Familia";
+
+        if (guestName.includes("http") || guestName.includes("github.io")) {
+            let partes = guestName.split("invitado=");
+            guestName = partes[partes.length - 1]; // Toma solo la última parte (el nombre)
+        }
+        // Limpiamos corchetes, paréntesis o espacios extra que hayan quedado al inicio (como los de tu foto)
+        guestName = guestName.replace(/^[\])( ]+/g, '');
+        
         document.getElementById('guestNameDisplay').textContent = guestName;
 
         // Fecha del evento con zona horaria segura para dispositivos móviles
